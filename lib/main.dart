@@ -1,4 +1,4 @@
-import 'package:comicapp/services.dart';
+import 'package:comicapp/services/services.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           _incrementCounter();
-          DataChapter().getChapter();
+          DataSearch().getSearch('inve');
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
